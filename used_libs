@@ -1,0 +1,6 @@
+libR.so
+libRblas.so
+libc.so.6
+libgfortran.so.5
+libm.so.6
+libquadmath.so.0
