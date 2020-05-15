@@ -4,7 +4,7 @@
 #
 Name     : R-gee
 Version  : 4.13.20
-Release  : 2
+Release  : 3
 URL      : https://cran.r-project.org/src/contrib/gee_4.13-20.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/gee_4.13-20.tar.gz
 Summary  : Generalized Estimation Equation Solver
@@ -27,21 +27,22 @@ lib components for the R-gee package.
 
 %prep
 %setup -q -c -n gee
+cd %{_builddir}/gee
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1584112440
+export SOURCE_DATE_EPOCH=1589534198
 
 %install
-export SOURCE_DATE_EPOCH=1584112440
+export SOURCE_DATE_EPOCH=1589534198
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
