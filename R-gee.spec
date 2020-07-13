@@ -4,7 +4,7 @@
 #
 Name     : R-gee
 Version  : 4.13.20
-Release  : 3
+Release  : 4
 URL      : https://cran.r-project.org/src/contrib/gee_4.13-20.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/gee_4.13-20.tar.gz
 Summary  : Generalized Estimation Equation Solver
